@@ -1,0 +1,15 @@
+import math
+while True:
+    # Ask user to input
+    r = input("Please input a value as radius：")
+    # If input is char, return
+    if not r.isalpha():
+        # Processing the input
+        r = float(r)
+        circleArea = math.pi*r**2
+        # Output the result
+        print("The area of circle is ：%f" % circleArea)
+        break
+    else:
+        print("You input format is wrong, please re-input")
+    continue
