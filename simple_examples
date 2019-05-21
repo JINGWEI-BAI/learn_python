@@ -1,0 +1,37 @@
+def symmetric_string():
+
+    #  ask user to input a string
+
+    input_str = input("Please input a string：")
+
+    #  Take a slice action to the string 
+
+    #  Take an action for checking the middle node slice
+
+    target_point = len(input_str) // 2
+
+    # Checking the slice point for the string
+
+    # The half part
+
+    left = input_str[:target_point]
+
+    # print(left)
+
+    # The last part
+
+    right = input_str[:target_point-1:-1]
+
+    # print(right)
+
+    # Make a judge and output the result
+
+    if left == right:
+
+        print("The string you input is symmetric！")
+    else:
+
+        print("The string you input is not symmetric！")
+
+
+symmetric_string()
